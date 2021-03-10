@@ -1,2 +1,4 @@
-import { businessList } from "./BusinessList.js";
+import { businessList, searchBar } from "./BusinessList.js";
+
 businessList();
+searchBar();

@@ -1,3 +1,4 @@
+
 const businesses = [
     {
       purchasingAgent: { nameLast: "Kirlin", nameFirst: "Kristy" },
@@ -114,3 +115,11 @@ const businesses = [
 export const getBusinesses = () => {
     return businesses
 }
+  
+export const agentName = businesses.map(business => {
+  const filtered = {};
+    filtered.name = `${business.purchasingAgent.nameFirst} ${business.purchasingAgent.nameLast}`
+    filtered.company = business.companyName
+    filtered.phoneNumber = business.phoneWork;
+      return filtered;
+});
